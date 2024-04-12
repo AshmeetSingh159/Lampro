@@ -1,5 +1,5 @@
 .hero{
-	background-image:url('https://optiabtests.s3.eu-west-2.amazonaws.com/Lampo/header-Desktop.png')  ;
+	background-image:url('https://optiabtests.s3.eu-west-2.amazonaws.com/Lampo/header-Desktop.png') !important;  ;
 }
 
 #Lampo_Vairant_Desktop{
@@ -42,8 +42,8 @@
 		line-height: 36px;
 		text-align: left;
 	}
+
 	#Lampo_Vairant_Mobile ul, #Lampo_Vairant_Mobile p{
-		padding-top: 25px;
 		font-family: Yantramanav;
 		font-size: 18px;
 		font-weight: 400;
@@ -59,8 +59,8 @@
 	}
 	
 	.hero{
-		background-image:url('https://optiabtests.s3.eu-west-2.amazonaws.com/Lampo/hero-mob-lampo-poolMobile.png') ;
-		padding-top: 267.44px ;
+		background-image:url('https://optiabtests.s3.eu-west-2.amazonaws.com/Lampo/hero-mob-lampo-poolMobile.png') !important;
+		padding-top: 64% !important;
 	}
 	
 }
