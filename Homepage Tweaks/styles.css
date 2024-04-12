@@ -1,11 +1,13 @@
-.hero{
+
+
+body.Lampo_Homepage_Version1 .hero{
 	background-image:url('https://optiabtests.s3.eu-west-2.amazonaws.com/Lampo/header-Desktop.png') !important;  ;
 }
 
-#Lampo_Vairant_Desktop{
+body.Lampo_Homepage_Version1 #Lampo_Vairant_Desktop{
 	display: block;
 }
-.hero__txt p{
+body.Lampo_Homepage_Version1 .hero__txt p{
 	font-family: Yantramanav;
 	font-size: 24px;
 	font-weight: 400;
@@ -13,29 +15,29 @@
 	text-align: left;
 }
 
-.Variant_ul li{
+body.Lampo_Homepage_Version1 .Variant_ul li{
 	list-style:square;
 	margin-left: 25px;
 }
 
-.span_bold{
+body.Lampo_Homepage_Version1 .span_bold{
 	font-weight: 700;
 }
 
-#Lampo_Vairant_Mobile{
+body.Lampo_Homepage_Version1 #Lampo_Vairant_Mobile{
 	display:none;
 }
 
 @media (max-width: 768px) {
 	
-	#Lampo_Vairant_Mobile{
+	body.Lampo_Homepage_Version1 #Lampo_Vairant_Mobile{
 		display:block;
 	}
-	#Lampo_Vairant_Desktop{
+	body.Lampo_Homepage_Version1 #Lampo_Vairant_Desktop{
 		display: none;
 	}
 	
-	#Lampo_Vairant_Mobile h1{
+	body.Lampo_Homepage_Version1 #Lampo_Vairant_Mobile h1{
 		font-family: Yantramanav;
 		font-size: 30px;
 		font-weight: 700;
@@ -43,7 +45,7 @@
 		text-align: left;
 	}
 
-	#Lampo_Vairant_Mobile ul, #Lampo_Vairant_Mobile p{
+	body.Lampo_Homepage_Version1 #Lampo_Vairant_Mobile ul, body.Lampo_Homepage_Version1 #Lampo_Vairant_Mobile p{
 		font-family: Yantramanav;
 		font-size: 18px;
 		font-weight: 400;
@@ -51,17 +53,16 @@
 		text-align: left;
 	}
 
-	.Variant_ul_Mobile li{
+	body.Lampo_Homepage_Version1 .Variant_ul_Mobile li{
 		list-style:square;
 		margin-left: 10px;
 		padding: 4px 0px;
 		text-align: left;
 	}
 	
-	.hero{
+	body.Lampo_Homepage_Version1 .hero{
 		background-image:url('https://optiabtests.s3.eu-west-2.amazonaws.com/Lampo/hero-mob-lampo-poolMobile.png') !important;
 		padding-top: 64% !important;
 	}
 	
 }
-
