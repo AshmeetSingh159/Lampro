@@ -29,12 +29,83 @@ function waitUntil(predicate, time = 20000) {
 
 function LempoHomepageTweaks(){
 	
+    if (!document.querySelector('#Lampo_Homepage_Version1')) {
+        const stylElement = document.createElement('style');
+        stylElement.id = 'Lampo_Homepage_Version1';
+        stylElement.innerHTML = `body.Lampo_Homepage_Version1 .hero{
+            background-image:url('https://optiabtests.s3.eu-west-2.amazonaws.com/Lampo/header-Desktop.png') !important;  ;
+        }
+        
+        body.Lampo_Homepage_Version1 #Lampo_Vairant_Desktop{
+            display: block;
+        }
+        body.Lampo_Homepage_Version1 .hero__txt p{
+            font-family: Yantramanav;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 40px;
+            text-align: left;
+        }
+        
+        body.Lampo_Homepage_Version1 .Variant_ul li{
+            list-style:square;
+            margin-left: 25px;
+        }
+        
+        body.Lampo_Homepage_Version1 .span_bold{
+            font-weight: 700;
+        }
+        
+        body.Lampo_Homepage_Version1 #Lampo_Vairant_Mobile{
+            display:none;
+        }
+        
+        @media (max-width: 768px) {
+            
+            body.Lampo_Homepage_Version1 #Lampo_Vairant_Mobile{
+                display:block;
+            }
+            body.Lampo_Homepage_Version1 #Lampo_Vairant_Desktop{
+                display: none;
+            }
+            
+            body.Lampo_Homepage_Version1 #Lampo_Vairant_Mobile h1{
+                font-family: Yantramanav;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 36px;
+                text-align: left;
+            }
+        
+            body.Lampo_Homepage_Version1 #Lampo_Vairant_Mobile ul, body.Lampo_Homepage_Version1 #Lampo_Vairant_Mobile p{
+                font-family: Yantramanav;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 25.2px;
+                text-align: left;
+            }
+        
+            body.Lampo_Homepage_Version1 .Variant_ul_Mobile li{
+                list-style:square;
+                margin-left: 10px;
+                padding: 4px 0px;
+                text-align: left;
+            }
+            
+            body.Lampo_Homepage_Version1 .hero{
+                background-image:url('https://optiabtests.s3.eu-west-2.amazonaws.com/Lampo/hero-mob-lampo-poolMobile.png') !important;
+                padding-top: 64% !important;
+            }
+            
+        }`;
+        document.querySelector('head').appendChild(stylElement);
+    }
+
 	document.body.classList.add('Lampo_Homepage_Version1');
 	
 	const Menu = document.querySelector(LampoHomepageVersion1Config.selectors.locationsMenu); 
 	const VariantSection = document.querySelector(LampoHomepageVersion1Config.selectors.heroSection);
     
-
     var listItems = Menu.getElementsByTagName('li');
 
     for (var i = 0; i < listItems.length; i++) {
